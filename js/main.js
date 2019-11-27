@@ -43,7 +43,7 @@ var url_string = window.location.href
 var url = new URL(url_string);
 var c = url.searchParams.get("interval");
 
-var interval = c || 30000;
+var interval = c || 58000;
 
 var leftPlayer;
 var rightPlayer;
@@ -80,6 +80,7 @@ var init = function() {
     console.log('init');
     $('.starter').hide();
     var playlistID = 'PLs_sKoRQdjxQq-fPoMoyBnq1zSS_srj4j';
+    playlistID = 'PLs_sKoRQdjxRbUozay8KjHyN8-eryh1XL';
 
     var events = {  'onReady': onPlayerReady, 'onStateChange': onPlayerStateChange };
     leftPlayer = new YT.Player('left', {
